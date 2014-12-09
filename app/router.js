@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('todos', { path: '/' }, function() {
+  this.resource('todos', { path: '/todos/:list_id' }, function() {
   	this.route('active');
   	this.route('completed');
   });
